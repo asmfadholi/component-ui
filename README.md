@@ -4,7 +4,13 @@ Component UI is a library which wrap modification of antd and typescript.
 
 ## Installation
 
-Use the cmd to install packages needed.
+Install dependecies in the root folder
+
+```bash
+yarn install
+```
+
+Use the cmd to install all packages needed.
 
 ```bash
 node init.js
