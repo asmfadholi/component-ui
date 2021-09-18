@@ -6,6 +6,7 @@
   "types": "lib/esm/index.d.ts",
   "license": "MIT",
   "scripts": {
+    "installation": "yarn install && node init.js",
     "dev:example": "npm --prefix ./example run start",
     "dev": "tsc -w",
     "build": "yarn build:esm && yarn build:cjs",
