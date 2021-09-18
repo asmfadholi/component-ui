@@ -8,21 +8,30 @@
   "scripts": {
     "installation": "yarn install && node init.js",
     "dev:example": "npm --prefix ./example run start",
-    "dev": "tsc -w",
+    "dev:library": "tsc -w",
+    "dev:storybook": "yarn storybook",
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "build:rollup": "rollup -c"
+    "build:rollup": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "files": [
     "/lib"
   ],
   "devDependencies": {
+    "@babel/core": "^7.15.5",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "antd": "^4.16.13",
+    "babel-loader": "^8.2.2",
     "postcss": "^8.3.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -36,9 +45,9 @@
   "peerDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "antd": "^4.16.13",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "antd": "^4.16.13"
+    "react-dom": "^17.0.1"
   },
   "description": "Component UI is a library which wrap modification of antd and typescript.",
   "repository": {
@@ -49,5 +58,6 @@
   "bugs": {
     "url": "https://github.com/asmfadholi/component-ui/issues"
   },
-  "homepage": "https://github.com/asmfadholi/component-ui#readme"
+  "homepage": "https://github.com/asmfadholi/component-ui#readme",
+  "dependencies": {}
 }

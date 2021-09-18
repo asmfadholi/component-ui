@@ -15,13 +15,19 @@ yarn installation
 How to run library.
 
 ```bash
-npm run dev
+npm run dev:library
 ```
 
 How to run UI simulation.
 
 ```bash
-npm run dev:example
+npm run dev:simulation
+```
+
+How to run UI Storybook.
+
+```bash
+npm run dev:storybook
 ```
 
 
