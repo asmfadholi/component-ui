@@ -1,0 +1,42 @@
+{
+  "name": "package-fadholi",
+  "version": "0.0.1",
+  "main": "lib/esm/index.js",
+  "module": "lib/esm/index.esm.js",
+  "types": "lib/cjs/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev:example": "npm --prefix ./example run start",
+    "dev": "tsc -w",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "build:rollup": "rollup -c"
+  },
+  "files": [
+    "/lib"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "antd": "^4.16.13",
+    "postcss": "^8.3.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup": "^2.56.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "shelljs": "^0.8.4",
+    "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "antd": "^4.16.13"
+  }
+}
