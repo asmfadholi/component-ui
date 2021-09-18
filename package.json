@@ -1,6 +1,6 @@
 {
   "name": "package-fadholi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/esm/index.js",
   "module": "lib/esm/index.esm.js",
   "types": "lib/esm/index.d.ts",

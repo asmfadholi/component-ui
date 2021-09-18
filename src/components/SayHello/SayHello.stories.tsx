@@ -12,4 +12,4 @@ const Template: Story<SayHelloProps> = (args) => <SayHello {...args} />;
 
 // Reuse that template for creating different stories
 export const Primary = Template.bind({});
-Primary.args = { name: "Primary 😃" };
+Primary.args = { name: "Primary" };
