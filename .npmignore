@@ -1,0 +1,6 @@
+# root
+node_modules
+
+# example
+example/node_modules
+example/build

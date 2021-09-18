@@ -1,6 +1,6 @@
 {
   "name": "package-fadholi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/esm/index.js",
   "module": "lib/esm/index.esm.js",
   "types": "lib/cjs/index.d.ts",
@@ -38,5 +38,15 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "antd": "^4.16.13"
-  }
+  },
+  "description": "Component UI is a library which wrap modification of antd and typescript.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmfadholi/component-ui.git"
+  },
+  "author": "Mochammad Fadholi",
+  "bugs": {
+    "url": "https://github.com/asmfadholi/component-ui/issues"
+  },
+  "homepage": "https://github.com/asmfadholi/component-ui#readme"
 }
