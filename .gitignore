@@ -1,7 +1,7 @@
 # root
-node_modules
-lib
+/node_modules
+/lib
 
 # example
-example/node_modules
-example/build
+/example/node_modules
+/example/build
