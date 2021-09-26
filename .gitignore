@@ -1,6 +1,7 @@
 # root
 /node_modules
 /lib
+/storybook-static
 
 # example
 /example/node_modules
