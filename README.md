@@ -18,12 +18,6 @@ How to run library.
 npm run dev:library
 ```
 
-How to run UI simulation.
-
-```bash
-npm run dev:simulation
-```
-
 How to run UI Storybook.
 
 ```bash

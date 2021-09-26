@@ -1,6 +1,7 @@
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
-import { SayHelloProps, SayHello } from ".";
+import { SayHello } from '@component-ui';
+import type { SayHelloProps } from '@component-ui';
 
 export default {
   title: "Components/SayHelloTest",
@@ -12,4 +13,4 @@ const Template: Story<SayHelloProps> = (args) => <SayHello {...args} />;
 
 // Reuse that template for creating different stories
 export const Primary = Template.bind({});
-Primary.args = { name: "Primary" };
+Primary.args = { type: "primary" };
